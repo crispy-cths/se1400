@@ -18,6 +18,10 @@ header {
   grid-column: 2/8;
 }
 
+header a {
+  text-decoration: none;
+}
+
 header h1 {
   height: 140%;
   padding: 0.5rem;
