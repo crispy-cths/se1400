@@ -174,40 +174,6 @@ nav ul li {
   grid-column: 1/-1;
 }
 
-  nav ul {
-    flex-flow: column nowrap;
-  }
-
-  #homehero,
-  #studenthero,
-  #facultyhero {
-    grid-row: 2/3;
-    grid-column: 5/8;
-    height: auto;
-  }
-
-  main img {
-    float: none;
-    width: 100%;
-    height: auto;
-    padding-left: 0px;
-  }
-
-
-
-
-  nav {
-    grid-row: 2/3;
-    grid-column: 1/-1;
-  }
-
-  #homehero,
-  #studenthero,
-  #facultyhero {
-    display: none;
-  }
-
-
 
 form {
   display: grid;
@@ -275,7 +241,7 @@ label {
     padding-left: 0px;
 
   }
-
+}
 
 @media only screen and (max-width: 600px) {
   header h1 {
@@ -295,3 +261,4 @@ label {
   h2, h3, p {
     text-align: center;
   }
+}
