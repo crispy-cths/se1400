@@ -39,7 +39,8 @@ nav p {
 main {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: repeat(12, 1fr);
 }
 
 .card {
@@ -48,12 +49,14 @@ main {
     border: #c6a0f6 solid 2px;
     background-color: #1e2030;
     max-width: 300px;
+    min-width: 200px;
 }
 
 /* the actual cards */
 
 .blurb {
     grid-column: 2/4;
+    grid-row: 1/4;
     height: 200px;
     min-width: 200px;
 }
@@ -67,6 +70,14 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  width: 300px;
+  grid-column: 5/6;
+  grid-row: 3/6;
+}
+
+.about {
+    grid-column: 2/4;
+    grid-row: 5/8;
 }
 
 #visualizer {
@@ -74,6 +85,7 @@ main {
   height: 150px;
   background: transparent;
   filter: drop-shadow(0 0 8px rgba(198, 160, 246, 0.3));
+  
 }
 
 
@@ -82,10 +94,22 @@ main {
 /* MEDIA QUERIES ;-; */
 
  @media only screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
     .card {
-        max-width: 100%;
+        height: auto;
+        min-width: 300px;
+        grid-column: 1/2;
     }
     .blurb {
-    grid-column: 2/4;
-  }
+        grid-row: 1/5;
+    }
+    .audio {
+        grid-row: 5/9;
+    }
+    .about {
+        grid-row: 9/12;
+    }
 }
