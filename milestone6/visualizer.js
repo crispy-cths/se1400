@@ -1,5 +1,5 @@
-const audioEl = document.getElementById('audioSource');
-const container = document.getElementById('container');
+const audioEl = document.getElementById("audioSource");
+const container = document.getElementById("visualizer");
 
 const audioMotion = new AudioMotionAnalyzer(container, {
   source: audioEl,
@@ -14,5 +14,7 @@ const audioMotion = new AudioMotionAnalyzer(container, {
   barSpace: 0,
   mirror: 0,
   showScaleX: false,
-  showPeaks: false
+  width: 300,
+  height: 200,
+  showPeaks: false,
 });
