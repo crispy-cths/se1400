@@ -12,10 +12,8 @@ const audioMotion = new AudioMotionAnalyzer(container, {
   smoothing: 0.7,
   fftSize: 512,
   roundBars: true,
-  barSpace: 0,
-  mirror: 0,
   showScaleX: false,
   width: 400,
-  height: 200,
+  height: 250,
   showPeaks: false,
 });

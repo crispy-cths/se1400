@@ -1,0 +1,45 @@
+.gallery div {
+  max-height: 400px;
+}
+.gallery img {
+  width: 100%;
+}
+
+.one {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.two {
+  grid-column: 4/5;
+  grid-row: 3/6;
+}
+
+.three {
+  grid-column: 2/3;
+  grid-row: 5/8;
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .card {
+    height: auto;
+    min-height: 200px;
+    min-width: 400px;
+    max-width: 400px;
+    grid-column: 1/2;
+  }
+  .one {
+    grid-row: 1/5;
+  }
+  .two {
+    grid-row: 5/9;
+  }
+  .three {
+    grid-row: 9/12;
+  }
+}
